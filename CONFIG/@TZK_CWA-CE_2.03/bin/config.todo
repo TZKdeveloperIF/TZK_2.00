@@ -1,0 +1,3 @@
+How does OFP organize files? Is it possible to have a small config.cpp only work as an entrance and other files are "included"?
+
+Need have bridge class, markers that uses \res textures and other \res definitions here.
