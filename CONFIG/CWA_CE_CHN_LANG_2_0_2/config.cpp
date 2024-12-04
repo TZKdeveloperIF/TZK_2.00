@@ -1,6 +1,6 @@
 class CfgPatches {
-	class CWA_CE_CHN_LANG_2_0_2_02 {
-		name = "CWA_CE_CHN_LANG_2_0_2_02";
+	class CWA_CE_CHN_LANG_2_0_2_05 {
+		name = "CWA_CE_CHN_LANG_2_0_2_05";
 		author = "IF";
 		units[] = {};
 		requiredAddons[] = {}; // IMPORTANT!
@@ -45,17 +45,18 @@ class CfgFonts {
 		SteelfishB64 = "Russian\SteelfishB64";
 		SteelfishB64CE = "Russian\SteelfishB64CE";
 	};
-	// Chinese trial
+	// take care. Total length of font can't be longer than 32 chars
 	class Chinese {
-		TahomaB24 = "Chinese\zeppelin3220";
-		TahomaB36 = "Chinese\zeppelin3220";
-		TahomaB48 = "Chinese\zeppelin3220";
-		CourierNewB64 = "Chinese\zeppelin3220";
-		AudreysHandB48 = "Chinese\Zeppelin33-Italic20";
-		AudreysHandI48 = "Chinese\Zeppelin33-Italic20";
-		Garamond64 = "Chinese\Zeppelin3320";
-		SteelfishB128 = "Chinese\Zeppelin3320";
-		SteelfishB64 = "Chinese\Zeppelin3320";
-		SteelfishB64CE = "Chinese\Zeppelin3320";
+		TahomaB24 = "Chinese\CNb_Hei_64";
+		TahomaB36 = "Chinese\CNb_Hei_64";
+		TahomaB48 = "Chinese\CNb_Hei_64";
+		CourierNewB64 = "Chinese\CNb_Hei_64";
+		AudreysHandB48 = "Chinese\AHb_Kai_48";
+		AudreysHandI48 = "Chinese\AHb_Kai_48";
+		Garamond64 = "Chinese\AHb_Kai_48";
+		SteelfishB128 = "Chinese\Sb_Lib_64";
+		SteelfishB64 = "Chinese\Sb_Lib_64";
+		SteelfishB64CE = "Chinese\Sb_Lib_64";
 	};
+	class Chinese_ChatOnly : Chinese {};
 };
