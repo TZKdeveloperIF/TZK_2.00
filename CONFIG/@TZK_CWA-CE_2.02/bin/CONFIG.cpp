@@ -3356,13 +3356,17 @@ class CfgAddons {
 	};
 };
 
-// CfgPatches is added in 2.01. Not sure if origin CWA supports this
+// CfgPatches is added in 2.01. CWA-CE supports this as well. Probably available in CWA too.
 class CfgPatches {
 	class VoiceRH {
 		units[] = {};
 		weapons[] = {};
 	};
 	class editorupdate102 {
+		units[] = {};
+		weapons[] = {};
+	};
+	class TZK_BIN_CONFIG_CWA_CE_202 {
 		units[] = {};
 		weapons[] = {};
 	};

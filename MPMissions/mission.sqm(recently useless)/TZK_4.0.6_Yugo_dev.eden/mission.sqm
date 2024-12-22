@@ -7,7 +7,7 @@ class Mission
 		TZK_BIS_AddOns
 		TZK_YugoMode_AddOns
 		TZK_CONFIG_406_AddOns
-		"TZK_CONFIG_406_Patch",
+		"TZK_BIN_CONFIG_CWA_CE_202","TZK_CONFIG_406_Patch",
 		"TZK_CONFIG_406_Patch2",
 		"TZK_CONFIG_406_Patch3",
 		"TZK_CONFIG_406_Patch4",
@@ -26,7 +26,7 @@ class Mission
 		"euro_res",
 		"CBT_misc",
 		TZK_CONFIG_406_AddOns
-		"TZK_CONFIG_406_Patch",
+		"TZK_BIN_CONFIG_CWA_CE_202","TZK_CONFIG_406_Patch",
 		"TZK_CONFIG_406_Patch2",
 		"TZK_CONFIG_406_Patch3",
 		"TZK_CONFIG_406_Patch4",

@@ -7,7 +7,7 @@ class Mission
 		TZK_BIS_AddOns
 		TZK_Basic_406_AddOns
 		TZK_CONFIG_406_AddOns
-		"TZK_CONFIG_406_Patch",
+		"TZK_BIN_CONFIG_CWA_CE_202","TZK_CONFIG_406_Patch",
 		"TZK_CONFIG_406_Patch2",
 		"TZK_CONFIG_406_Patch3",
 		"TZK_CONFIG_406_Patch4",
@@ -15,7 +15,7 @@ class Mission
 	addOnsAuto[]=
 	{
 		TZK_CONFIG_406_AddOns
-		"TZK_CONFIG_406_Patch",
+		"TZK_BIN_CONFIG_CWA_CE_202","TZK_CONFIG_406_Patch",
 		"TZK_CONFIG_406_Patch2",
 		"TZK_CONFIG_406_Patch3",
 		"TZK_CONFIG_406_Patch4",
