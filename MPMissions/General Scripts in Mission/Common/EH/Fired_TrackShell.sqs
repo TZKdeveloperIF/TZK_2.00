@@ -2,6 +2,9 @@
 _vehicle = _this select 0; _shell = _this select 1; _si = _this select 2; _boolArt = if (count _this > 3) Then {_this select 3} Else {false}
 ? !local _shell: exit
 
+; add "base-near" check
+? _boolArt: _this exec "Common\EH\Fired_ArtNearBase.sqs"
+
 _siEnemy = [si0, si1] select (_si == si0)
 ? upgMatrix select _siEnemy select upgRadarArtillery != 2: Exit
 

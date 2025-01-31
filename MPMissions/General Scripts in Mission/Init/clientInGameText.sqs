@@ -1,0 +1,12 @@
+;  args: none
+
+;  this script will generate an array that contains in-game text
+;  It works like stringtable, but use in-game scripts to initialize it
+;  Few languages requires special encoding. Chinese uses GB2312. Use 
+;  different script files with their own encoding to init the content
+
+TzkInGameText = []
+
+_bMatch = false
+? not _bMatch: _bMatch = call preprocessFile "Init\clientInGameChn.sqf"
+? not _bMatch: _bMatch = call preprocessFile "Init\clientInGameEng.sqf"

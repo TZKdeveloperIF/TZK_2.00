@@ -101,6 +101,8 @@ _si exec (TzkScripts select 316)
 ; init them on game just begin. Unnecessary to wait match formal start
 siPlayer exec (TzkScripts select 317);
 
+0 exec "Init\clientInGameText.sqs"
+
 ? groupPlayer == groupCommander select siPlayer: 0 exec "Player\CmdDefineRules.sqs"
 
 exit

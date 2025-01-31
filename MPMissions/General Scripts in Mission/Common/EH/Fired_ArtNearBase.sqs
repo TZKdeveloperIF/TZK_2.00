@@ -1,0 +1,26 @@
+; args: [vehicle, shell, side index, (bool Artillery Vehicle)]
+_vehicle = _this select 0; _shell = _this select 1; _si = _this select 2
+
+; check only for player art vehicle
+? isNull player: exit
+? not (player in _vehicle): exit
+
+; check vehicle
+	_type = _vehicle call funcGetUnitTypeFromObject
+	? _type in typesHowitzer || _type in typesRocketLauncher: goto "vehIsArt"
+	? _type != -1: exit
+; check structure
+	_type = _vehicle call funcGetStructTypeFromObject
+	? _type in structsOccupiableHowitzer || _type in structsOccupiableMortar: goto "vehIsArt"
+	exit
+
+# vehIsArt
+
+_bNearBase = ([getPosASL _vehicle, _si] call loadFile "Common\SQF\ClosestCriticalStruct.sqf") select 1 < 50
+? not _bNearBase: exit
+
+~ 3
+? isNull _shell: exit
+
+deleteVehicle _shell
+hint (TzkInGameText select 000)
